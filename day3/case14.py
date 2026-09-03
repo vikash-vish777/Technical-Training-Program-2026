@@ -1,0 +1,9 @@
+n=[1,2,3,5,5,5,1,2,6,6,6,7,7,7,8,8,9,9,9,9]
+print(n.count(1))
+print(n.count(2))
+print(n.count(3))
+print(n.count(5))
+print(n.count(6))
+print(n.count(7))
+print(n.count(8))
+print(n.count(9))
