@@ -1,0 +1,70 @@
+BIG O :- it is a complexity that is going to be less or equal to the worst case.
+BIG-OMEGA :- it is a complexity that is going to be least more than the best case.
+BIG-THETA :- it is a complexity that is within bounds of the worst and the best cases.
+
+O(1) :- CONSTANT TIME
+
+ex:
+  arr=[1,8,2,10,4]
+  arr[0] // it take constant time to access first element
+
+
+O(N) :- LINEAR TIME
+ex:
+    arr=[1,8,2,10,4]
+    for element in arr:
+        print(element) //linear time since it is visiting every element of array
+
+O(LogN) :- LOGARITHMIC TIME
+ex:
+
+  arr=[1,8,2,10,4]
+  for index in range(0,len(arr),3):
+    print(arr[index]) //logarithmic time since it is visiting only some element 
+
+
+O(N2) :- QUADRATIC TIME 
+Ex:
+  arr=[1,8,2,10,4]
+  for x in arr:
+    for y in arr:
+      print(x,y)// looking for a every index in the array twice
+
+
+
+o(2n) :- EXPONENTIAL TIME
+
+Ex:
+  def fibonacci(n):
+    if n<=1:
+      return N
+    return fibonacci(n-1)+fibonacci(n-2)
+
+
+                                         ## **DAY 3**
+
+
+
+FUNCTION :- function is a block of code to perform a specific task and group of task.
+  modularity approach and reusability 
+
+
+
+
+
+
+
+  Linear Search Pseudocode
+
+- Create function with two parameters which are an array and a value
+
+-Loop through the array and check if the current array element is equal to the value
+
+- If it is return the index at which the element is found
+
+- If the value is never found return -1
+
+
+
+
+
