@@ -1,0 +1,321 @@
+BIG O :- it is a complexity that is going to be less or equal to the worst case.
+BIG-OMEGA :- it is a complexity that is going to be least more than the best case.
+BIG-THETA :- it is a complexity that is within bounds of the worst and the best cases.
+
+O(1) :- CONSTANT TIME
+
+ex:
+  arr=[1,8,2,10,4]
+  arr[0] // it take constant time to access first element
+
+
+O(N) :- LINEAR TIME
+ex:
+    arr=[1,8,2,10,4]
+    for element in arr:
+        print(element) //linear time since it is visiting every element of array
+
+O(LogN) :- LOGARITHMIC TIME
+ex:
+
+  arr=[1,8,2,10,4]
+  for index in range(0,len(arr),3):
+    print(arr[index]) //logarithmic time since it is visiting only some element 
+
+
+O(N2) :- QUADRATIC TIME 
+Ex:
+  arr=[1,8,2,10,4]
+  for x in arr:
+    for y in arr:
+      print(x,y)// looking for a every index in the array twice
+
+
+
+o(2n) :- EXPONENTIAL TIME
+
+Ex:
+  def fibonacci(n):
+    if n<=1:
+      return N
+    return fibonacci(n-1)+fibonacci(n-2)
+
+
+                                         ## **DAY 3**
+
+
+
+FUNCTION :- function is a block of code to perform a specific task and group of task.
+  modularity approach and reusability 
+
+
+
+
+
+
+
+  Linear Search Pseudocode
+
+- Create function with two parameters which are an array and a value
+
+-Loop through the array and check if the current array element is equal to the value
+
+- If it is return the index at which the element is found
+
+- If the value is never found return -1
+
+
+
+         ---------------DAY :-4----------------
+
+
+
+
+
+
+|                              |
+|                              |
+|                              |
+|                              |
+|                              |
+|                              |
+|                              |
+|                              |
+|______________________________|
+
+
+Stack Using list
+
+- Easy to implement
+- Speed problem when it grow
+
+Stack using Linked list
+
+- Fast performance
+- Implementation is not easy
+
+
+
+
+    ------------------- DAY 6 ---------------------
+
+
+    instance variable :- instance variable is a deppend on object and create a saparate memory in each object.
+    
+    Static variable :- static variable is a not deppend on object and create only one memory area 
+
+
+
+    where we can declare static varaible?
+
+Inside a class but outside of method
+
+In a constructon by using class name
+
+In a instance method by using class name
+
+in a classmethod using class name or cls varible
+
+staticmethod by using class name
+
+--------------------------------------------
+--------------------------------------------
+
+how to we access static variable>
+
+Inside Instance method using self or class name
+
+constructor using self or class name
+
+In a class method using ils variable on class name
+
+static method using class name
+
+outside of the class using object on class name
+
+how delete the static variable
+
+Inside class we can use cls variable: del cls: Staticvariablename
+
+
+
+
+
+           -------------------------------LINKED list------------------------------------
+
+Linked list is a form of sequencetial collection and it does not have to be in order. A linked list is made up of independent
+nodes that may contain any type of data and each node has a reference to the next node in the link 
+Ex :-
+Music Playlist 🎵
+
+Song 1 → Song 2 → Song 3 → Song 4
+
+Each song points to the next song.
+
+
+
+
+
+
+
+
+
+-----------------------------------------------  DAY 7  -------------------------------------------------
+
+
+ TREE :- 
+ A tree ia a nonlinear data structure with hierarchical relationships between its element without having 
+ any cycle it is basically reversed from a real life tree.
+
+Ex:-         10
+           /    \
+          20     30
+         / \    / \
+        40 50  60 70
+
+🌳 Applications of Trees
+
+File System
+
+Folders and subfolders are stored like a tree.
+Example:
+Computer
+├── Documents
+│   ├── Notes
+│   └── Resume
+└── Pictures
+Database Indexing
+B-Trees and B+ Trees are used to search data quickly in databases.
+Searching
+Binary Search Tree (BST) is used for efficient searching, insertion, and deletion
+
+
+ -Quicker and Easier access to the data
+ -Store hairarchical dat like folder structure organization structure ,XML,HTML data
+ 
+
+ 1. Important Tree Terms
+
+Node → Each element in a tree.
+
+Root → The first/top node.
+
+        10  ← Root
+
+Parent → A node that has children.
+
+        10  ← Parent
+       /  \
+      20  30 ← Children
+
+Child → A node below another node.
+
+Leaf Node → A node with no children.
+
+        10
+       /  \
+      20  30
+
+20 and 30 are leaf nodes.
+
+Edge → Connection between two nodes.
+
+10 ─── 20
+    ↑
+   Edge
+
+Height → Longest path from a node to a leaf.
+
+Depth → Distance from the root to a node.
+
+
+
+ TYPE 
+
+ Binary tree are the data structure in whiche each node has at most two children often referred to as the left and right children
+
+ - Binary tree is a family of data structure (BST,Heap tree,AVL red black ,tree ,syntax tree)
+
+ - binary tree are a prerequisite for mode advance tree like BST ,AVL ,red black tree
+
+ -Human coding problem , heap priority problem and expressio parsing problem can be solved efficiently using binary tree
+
+
+ implemantation
+  - LINEAR LIST 
+  - Python List (array)
+
+ -double linked list 
+
+                         ROOT
+                          |
+                          v
+                 +------------------+
+                 | Address = 1000   |
+                 | Data    = 10     |
+                 | Left    = 2000   |
+                 | Right   = 3000   |
+                 +------------------+
+                       /       \
+                      /         \
+                     v           v
+
+          +------------------+    +------------------+
+          | Address = 2000   |    | Address = 3000   |
+          | Data    = 20     |    | Data    = 30     |
+          | Left    = 4000   |    | Left    = NULL   |
+          | Right   = 5000   |    | Right   = NULL   |
+          +------------------+    +------------------+
+                 /     \
+                /       \
+               v         v
+
+      +------------------+    +------------------+
+      | Address = 4000   |    | Address = 5000   |
+      | Data    = 40     |    | Data    = 50     |
+      | Left    = NULL   |    | Left    = NULL   |
+      | Right   = NULL   |    | Right   = NULL   |
+      +------------------+    +------------------+
+
+
+🌳 Binary Tree using List
+
+Tree:
+
+             10
+           /    \
+         20      30
+        /  \
+      40    50
+
+
+      Store it in a list:
+
+Index:    0    1    2    3    4
+          ↓    ↓    ↓    ↓    ↓
+List:    [10, 20,  30,  40,  50]
+Address + Data representation
+
+
+
+
+
+
+
+
+
+
+                        n1
+
+
+              n2                       n3
+
+
+
+      n4              n5        n6                 n7
+
+
+
+n9           n10
+
+
