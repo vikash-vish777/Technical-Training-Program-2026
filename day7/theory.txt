@@ -319,3 +319,92 @@ Address + Data representation
 n9           n10
 
 
+
+
+🔹 Tree Traversal
+Traversal means visiting all nodes of a tree.
+
+There are three important depth-first traversals:
+
+1. Inorder
+Left → Root → Right
+2. Preorder
+Root → Left → Right
+3. Postorder
+Left → Right → Root
+Example
+          A
+        /   \
+       B     C
+      / \
+     D   E
+Inorder:
+
+D → B → E → A → C
+Preorder:
+
+A → B → D → E → C
+Postorder:
+
+D → E → B → C → A
+🔹 Tree Operations
+Important operations on a tree:
+
+Create a tree
+Insert a node
+Delete a node
+Search for a value
+Traverse all nodes
+Delete the tree
+🔹 Tuple Practice
+Empty Tuple
+t = ()
+Length of an empty tuple is 0.
+
+Tuple Without Parentheses
+t = "a", "b"
+This is also a tuple.
+
+Tuple Concatenation
+a = ("1", "2")
+b = ("3", "4")
+
+print(a + b)
+Output:
+
+('1', '2', '3', '4')
+Single Element Tuple
+t = ("python",)
+The comma is important.
+
+type(("python",))   # tuple
+type(("python"))    # str
+Tuple is Immutable
+Tuple elements cannot be changed after creation.
+
+t = (1, 2, 3)
+
+# t[0] = 5   # TypeError
+🔹 String Practice
+Remove Special Character
+If * is present in a string, it can be removed using a loop.
+
+Example:
+
+prashant*is*a*good*programmer
+After removing *:
+
+prashantisagoodprogrammer
+Character Frequency
+Example:
+
+Input:  aabbbbeeeeffggg
+Output: a2b4e4f2g3
+This means:
+
+a → 2 times
+b → 4 times
+e → 4 times
+f → 2 times
+g → 3 times
+
